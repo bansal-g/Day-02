@@ -1,0 +1,8 @@
+//Verilog Code for Universal Gates, i.e. AND, OR, NOT 
+//Dataflow Modelling
+module universal_gates(Y1,Y2,A,B);
+input A,B;
+output Y1,Y2;
+assign Y1=~(A & B);
+assign Y2= ~(A | B);
+endmodule
